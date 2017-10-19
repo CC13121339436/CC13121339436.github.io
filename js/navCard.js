@@ -1,0 +1,13 @@
+define(["jquery"],function(){
+	return{
+		show:function(){
+			$(".nav-main").on("mouseover",function(){
+				$(this).find("ul").css({display:"block"});
+				$(this).siblings().find("ul").css({display:"none"});
+			}),
+			$(".nav-main").on("mouseout",function(){
+				$(this).find("ul").css({display:"none"});
+			})
+		}
+	}
+})

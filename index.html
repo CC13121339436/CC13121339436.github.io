@@ -1,15 +1,3319 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-</head>
-<body>
-	<h1>
-		这是曹俊军的个人网站!!
-	</h1>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>必要 - 全球首家C2M电子商务平台</title>
+		<link href="http://static.biyao.com/pc/favicon.ico" rel="shortcut icon" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<link rel="stylesheet" href="css/swiper.css">
+		<script src="js/require.js" data-main="js/index.js" ></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<script type="text/javascript">
+		$(function(){
+			if(document.cookie!=""){
+				$("#userNone").hide();
+				$("#userBlock").css({display:"inline-block"});
+			}
+			$(".exit").on("click",function(){
+				$("#userNone").show();
+				$("#userBlock").css({display:"none"});
+			})
+		})
+	/*if(document.cookie!=""){
+		
+		var str=document.cookie;
+		var arr=str.split("; ")
+		for(i=0;i<arr.length;i++){
+			item=arr[i].split("=");
+			if(item[0]=="username"){
+				iname=item[1] ;  
+			}
+		}
+		$("#js-login-top").html(iname)
+		$("#js-register-top").html("退出")
+	}*/
+	</script>
+	<body>
+		<!--header头部-->
+		<div class="topCon">
+			<script type="text/javascript">
+				$(".topCon").load("header.html")
+			</script>
+		</div>
+		<!--nav导航-->
+		<div id="nav">
+			<div class="clearfix">
+				<a href="index.html" class="nav-logo"></a>
+				<!--隐藏列表-->
+				<div class="nav-category">
+					<p>
+						<span>全部分类</span>
+						<i></i>
+					</p>
+					<div>
+						<ul class="nav-list">
+							<li class="nav-main">
+								<p>
+									<a href="javascript:;">男装</a>
+									<span>/</span>
+									<a href="javascript:;">女装</a>
+								</p>
+								<ul>
+									<li class="nav-sub">
+										<a href="javascript:;">男士上装</a>
+										<i>></i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">POLO衫</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">男T恤</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">衬衫</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">西服/衬衫</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">针织衫</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-sub">
+										<a href="javascript:;">男士下装</a>
+										<i>></i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">短裤</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">牛仔裤</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">休闲裤</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">西裤</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-sub">
+										<a href="javascript:;">男士外套</a>
+										<i>></i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">皮衣/夹克</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">风衣/大衣</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-sub">
+										<a href="javascript:;">女裙</a>
+										<i>></i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">连衣裙</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">半身裙</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-sub">
+										<a href="javascript:;">女士上装</a>
+										<i>></i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">T恤/POLO</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">衬衫/雪纺</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">针织衫</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">外套</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-sub">
+										<a href="javascript:;">女士下装</a>
+										<i>></i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">短裤</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">牛仔裤</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">休闲裤</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-sub">
+										<a href="javascript:;">特色女装</a>
+										<i>></i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">婚纱/礼服</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-main">
+								<p>
+									<a href="javascript:;">眼镜</a>
+									<span>/</span>
+									<a href="javascript:;">配饰</a>
+								</p>
+								<ul>
+									<li class="nav-sub">
+										<a href="javascript:;">眼镜</a>
+										<i>></i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">眼镜</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-sub">
+										<a href="javascript:;">内衣</a>
+										<i>></i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">文胸/套装</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">女士内裤</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">男士内裤</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">睡衣/家居服</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">秋衣秋裤</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">功能内衣</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-sub">
+										<a href="javascript:;">袜子</a>
+										<i>></i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">袜子</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">连裤袜/丝袜</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-sub">
+										<a href="javascript:;">配饰</a>
+										<i>></i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">丝巾/围巾</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">领带</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">腰带/礼盒</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">遮阳/雨伞</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-main">
+								<p>
+									<a href="javascript:;">鞋靴</a>
+									<span>/</span>
+									<a href="javascript:;">运动</a>
+								</p>
+								<ul>
+									<li class="nav-sub">
+										<a href="javascript:;">男鞋</a>
+										<i>></i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">商务鞋</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">休闲鞋</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">男鞋</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-sub">
+										<a href="javascript:;">女鞋</a>
+										<i>></i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">凉鞋</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">休闲鞋</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">单鞋</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">女鞋</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-sub">
+										<a href="javascript:;">户外鞋服</a>
+										<i>></i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">速干衣裤</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">冲锋衣裤</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">户外鞋</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-sub">
+										<a href="javascript:;">运动服饰</a>
+										<i>></i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">运动衣/裤</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">运动袜</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">功能内衣</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-sub">
+										<a href="javascript:;">运动鞋</a>
+										<i>></i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">跑鞋</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">休闲鞋</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">训练鞋</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">拖鞋</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-sub">
+										<a href="javascript:;">运动装备</a>
+										<i>></i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">羽毛球拍</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-main">
+								<p>
+									<a href="javascript:;">皮具</a>
+									<span>/</span>
+									<a href="javascript:;">出行</a>
+								</p>
+								<ul>
+									<li class="nav-sub">
+										<a href="javascript:;">女包</a>
+										<i>></i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">挎包</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">钱包手包</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-sub">
+										<a href="javascript:;">皮带</a>
+										<i>></i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">皮带</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-sub">
+										<a href="javascript:;">男包</a>
+										<i>></i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">钱包手包</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">单肩包</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-sub">
+										<a href="javascript:;">真皮配件</a>
+										<i>></i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">真皮配件</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-sub">
+										<a href="javascript:;">功能箱包</a>
+										<i>></i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">拉杆箱</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">休闲包</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">妈咪包</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-sub">
+										<a href="javascript:;">出行必备</a>
+										<i>></i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">洗漱/化妆包</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">颈枕/眼罩</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">雨/遮阳伞</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">口罩</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-main">
+								<p>
+									<a href="javascript:;">居家</a>
+									<span>/</span>
+									<a href="javascript:;">婴童</a>
+								</p>
+								<ul>
+									<li class="nav-sub ">
+										<a href="javascript:;">家纺</a>
+										<i>&gt;</i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">枕头枕芯</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">凉席/毯子</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">床品套件</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">被子被芯</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">床垫/床褥</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">毛浴巾/浴衣</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">靠枕/抱枕</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">垫毯/拖鞋</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">窗帘/窗纱</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-sub ">
+										<a href="javascript:;">生活用品</a>
+										<i>&gt;</i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">清洁用品</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">收纳用品</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">洗晒/熨烫	</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-sub ">
+										<a href="javascript:;">婴儿服饰</a>
+										<i>&gt;</i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">婴儿用品</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">牵引包</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-sub ">
+										<a href="javascript:;">玩具床车</a>
+										<i>&gt;</i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">儿童玩具</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">童床童车</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-sub ">
+										<a href="javascript:;">童装童靴</a>
+										<i>&gt;</i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">上衣</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">下装</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">鞋靴	</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">外套/棉服
+												</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">套装/亲子</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-sub">
+										<a href="javascript:;">儿童配饰
+										</a>
+										<i>&gt;</i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">内衣/睡衣</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">书包</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">儿童拉杆箱</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">童袜
+												</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">帽子/围巾</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-sub">
+										<a href="javascript:;">妈妈专区</a>
+										<i>&gt;</i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">妈咪包</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">月子服</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-main">
+								<p>
+									<a href="javascript:;">美妆</a>
+									<span>/</span>
+									<a href="javascript:;">个护</a>
+								</p>
+								<ul>
+									<li class="nav-sub">
+										<a href="javascript:;">基础护肤</a>
+										<i>&gt;</i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">面膜</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">水/精华/霜</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">洁面/卸妆</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-sub">
+										<a href="javascript:;">香水彩妆</a>
+										<i>&gt;</i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">底妆</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">香水</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">眼妆</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">唇妆</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">美甲
+												</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">美妆工具</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-sub">
+										<a href="javascript:;">洗发护发
+										</a>
+										<i>&gt;</i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">洗发护发</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">美发工具</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-sub">
+										<a href="javascript:;">身体护理</a>
+										<i>&gt;</i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">沐浴润肤</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">精油</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-sub">
+										<a href="javascript:;">个护
+										</a>
+										<i>&gt;</i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">声波振动牙刷</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">剃须/毛刀</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-main">
+								<p>
+									<a href="javascript:;">厨具</a>
+									<span>/</span>
+									<a href="javascript:;">家电</a>
+									<span>/</span>
+									<a href="javascript:;">数码</a>
+								</p>
+								<ul>
+									<li class="nav-sub">
+										<a href="javascript:;">水具
+										</a>
+										<i>&gt;</i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">水杯水壶</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">酒杯/茶杯</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-sub">
+										<a href="javascript:;">厨具
+										</a>
+										<i>&gt;</i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">烹饪锅具</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">刀具菜板</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">餐具</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">厨房配件</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">清洁/收纳</a>
+											</li>
+										</ul>
+									</li>
 
+									<li class="nav-sub">
+										<a href="javascript:;">家电</a>
+										<i>&gt;</i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">厨房小电</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">生活电器</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">个护健康</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-sub">
+										<a href="javascript:;">数码</a>
+										<i>&gt;</i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">数据线</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">充电设备</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">数码配件</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-main">
+								<p>
+									<a href="javascript:;">家装</a>
+									<span>/</span>
+									<a href="javascript:;">家具</a>
+									<span>/</span>
+									<a href="javascript:;">汽配</a>
+								</p>
+								<ul>
+									<li class="nav-sub">
+										<a href="javascript:;">厨卫用品
+										</a>
+										<i>&gt;</i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">淋浴花洒</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">龙头/水槽</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">厨卫挂件</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-sub">
+										<a href="javascript:;">家装软饰
+										</a>
+										<i>&gt;</i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">台灯</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">落地灯</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">挂钟</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">装饰画</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">相框</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-sub">
+										<a href="javascript:;">五金工具</a>
+										<i>&gt;</i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">小工具</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">锁具</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">开关插座</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-sub">
+										<a href="javascript:;">卧室</a>
+										<i>&gt;</i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">床</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">床垫</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">储物</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">梳妆台/镜
+												</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-sub">
+										<a href="javascript:;">书房</a>
+										<i>&gt;</i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">办公椅</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">书架/书柜</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">书桌</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-sub">
+										<a href="javascript:;">客厅</a>
+										<i>&gt;</i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">茶几</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">储物/电视柜</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">沙发/椅</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-sub">
+										<a href="javascript:;">餐厅</a>
+										<i>&gt;</i>
+										<ul>
+											<li class="nav-item">
+												<a href="">餐椅</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">餐边柜</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">餐桌</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-sub">
+										<a href="javascript:;">儿童家具
+										</a>
+										<i>&gt;</i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">儿童桌椅</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">儿童床</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">床垫</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-sub">
+										<a href="javascript:;">汽配</a>
+										<i>&gt;</i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">汽车配饰</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">车充</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!--隐藏列表-->
+				<!--搜索栏-->
+				<div class="nav-search">
+					<p>
+						<input type="text" id="searchInput" placeholder="请输入要搜索的商品" />
+						<span id="searchBtn"></span>
+					</p>
+					<ul>
+						<li>运动</li>
+						<li>T恤</li>
+						<li>牛仔裤</li>
+						<li>连衣裙</li>
+						<li>美妆</li>
+						<li>凉席</li>
+						<li>剃须刀</li>
+						<li>拉杆箱</li>
+						<li>数码</li>
+						<li>空气净化器</li>
+					</ul>
+				</div>
+				<!--搜索栏-->
+			</div>
+		</div>
+		<!--轮播图及导航列表-->
+		<div id="banner" class="swiper-container">
+			<div class="banner-slider swiper-wrapper">
+				<div class="swiper-slide">
+					<a href="javascript:;">
+						<img src="images/banner1.jpg"/>
+					</a>
+				</div>
+				<div class="swiper-slide">
+					<a href="javascript:;" >
+						<img src="images/banner2.jpg"/>
+					</a>
+				</div>
+				<div class="swiper-slide">
+					<a href="javascript:;" >
+						<img src="images/banner3.jpg"/>
+					</a>
+				</div>
+				<div class="swiper-slide">
+					<a href="javascript:;">
+						<img src="images/banner4.jpg"/>
+					</a>
+				</div>
+				<div class="swiper-slide">
+					<a href="javascript:;">
+						<img src="images/banner5.jpg"/>
+					</a>
+				</div>
+				<div class="swiper-slide">
+					<a href="javascript:;">
+						<img src="images/banner6.jpg"/>
+					</a>
+				</div>
+				<div class="swiper-slide">
+					<a href="javascript:;">
+						<img src="images/banner7.jpg"/>
+					</a>
+				</div>
+			</div>
+			<span class="swiper-button-prev" ></span>
+			<span class="swiper-button-next"></span>
+			<div class="swiper-pagination"></div>
+			<ul class="nav-list">
+							<li class="nav-main">
+								<p>
+									<a href="javascript:;">男装</a>
+									<span>/</span>
+									<a href="javascript:;">女装</a>
+								</p>
+								<ul>
+									<li class="nav-sub">
+										<a href="javascript:;">男士上装</a>
+										<i>></i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">POLO衫</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">男T恤</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">衬衫</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">西服/衬衫</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">针织衫</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-sub">
+										<a href="javascript:;">男士下装</a>
+										<i>></i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">短裤</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">牛仔裤</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">休闲裤</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">西裤</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-sub">
+										<a href="javascript:;">男士外套</a>
+										<i>></i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">皮衣/夹克</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">风衣/大衣</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-sub">
+										<a href="javascript:;">女裙</a>
+										<i>></i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">连衣裙</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">半身裙</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-sub">
+										<a href="javascript:;">女士上装</a>
+										<i>></i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">T恤/POLO</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">衬衫/雪纺</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">针织衫</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">外套</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-sub">
+										<a href="javascript:;">女士下装</a>
+										<i>></i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">短裤</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">牛仔裤</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">休闲裤</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-sub">
+										<a href="javascript:;">特色女装</a>
+										<i>></i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">婚纱/礼服</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-main">
+								<p>
+									<a href="javascript:;">眼镜</a>
+									<span>/</span>
+									<a href="javascript:;">配饰</a>
+								</p>
+								<ul>
+									<li class="nav-sub">
+										<a href="javascript:;">眼镜</a>
+										<i>></i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">眼镜</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-sub">
+										<a href="javascript:;">内衣</a>
+										<i>></i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">文胸/套装</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">女士内裤</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">男士内裤</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">睡衣/家居服</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">秋衣秋裤</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">功能内衣</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-sub">
+										<a href="javascript:;">袜子</a>
+										<i>></i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">袜子</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">连裤袜/丝袜</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-sub">
+										<a href="javascript:;">配饰</a>
+										<i>></i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">丝巾/围巾</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">领带</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">腰带/礼盒</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">遮阳/雨伞</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-main">
+								<p>
+									<a href="javascript:;">鞋靴</a>
+									<span>/</span>
+									<a href="javascript:;">运动</a>
+								</p>
+								<ul>
+									<li class="nav-sub">
+										<a href="javascript:;">男鞋</a>
+										<i>></i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">商务鞋</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">休闲鞋</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">男鞋</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-sub">
+										<a href="javascript:;">女鞋</a>
+										<i>></i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">凉鞋</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">休闲鞋</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">单鞋</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">女鞋</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-sub">
+										<a href="javascript:;">户外鞋服</a>
+										<i>></i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">速干衣裤</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">冲锋衣裤</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">户外鞋</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-sub">
+										<a href="javascript:;">运动服饰</a>
+										<i>></i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">运动衣/裤</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">运动袜</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">功能内衣</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-sub">
+										<a href="javascript:;">运动鞋</a>
+										<i>></i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">跑鞋</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">休闲鞋</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">训练鞋</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">拖鞋</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-sub">
+										<a href="javascript:;">运动装备</a>
+										<i>></i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">羽毛球拍</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-main">
+								<p>
+									<a href="javascript:;">皮具</a>
+									<span>/</span>
+									<a href="javascript:;">出行</a>
+								</p>
+								<ul>
+									<li class="nav-sub">
+										<a href="javascript:;">女包</a>
+										<i>></i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">挎包</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">钱包手包</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-sub">
+										<a href="javascript:;">皮带</a>
+										<i>></i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">皮带</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-sub">
+										<a href="javascript:;">男包</a>
+										<i>></i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">钱包手包</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">单肩包</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-sub">
+										<a href="javascript:;">真皮配件</a>
+										<i>></i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">真皮配件</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-sub">
+										<a href="javascript:;">功能箱包</a>
+										<i>></i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">拉杆箱</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">休闲包</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">妈咪包</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-sub">
+										<a href="javascript:;">出行必备</a>
+										<i>></i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">洗漱/化妆包</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">颈枕/眼罩</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">雨/遮阳伞</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">口罩</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-main">
+								<p>
+									<a href="javascript:;">居家</a>
+									<span>/</span>
+									<a href="javascript:;">婴童</a>
+								</p>
+								<ul>
+									<li class="nav-sub ">
+										<a href="javascript:;">家纺</a>
+										<i>&gt;</i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">枕头枕芯</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">凉席/毯子</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">床品套件</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">被子被芯</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">床垫/床褥</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">毛浴巾/浴衣</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">靠枕/抱枕</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">垫毯/拖鞋</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">窗帘/窗纱</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-sub ">
+										<a href="javascript:;">生活用品</a>
+										<i>&gt;</i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">清洁用品</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">收纳用品</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">洗晒/熨烫	</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-sub ">
+										<a href="javascript:;">婴儿服饰</a>
+										<i>&gt;</i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">婴儿用品</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">牵引包</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-sub ">
+										<a href="javascript:;">玩具床车</a>
+										<i>&gt;</i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">儿童玩具</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">童床童车</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-sub ">
+										<a href="javascript:;">童装童靴</a>
+										<i>&gt;</i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">上衣</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">下装</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">鞋靴	</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">外套/棉服
+												</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">套装/亲子</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-sub">
+										<a href="javascript:;">儿童配饰
+										</a>
+										<i>&gt;</i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">内衣/睡衣</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">书包</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">儿童拉杆箱</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">童袜
+												</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">帽子/围巾</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-sub">
+										<a href="javascript:;">妈妈专区</a>
+										<i>&gt;</i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">妈咪包</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">月子服</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-main">
+								<p>
+									<a href="javascript:;">美妆</a>
+									<span>/</span>
+									<a href="javascript:;">个护</a>
+								</p>
+								<ul>
+									<li class="nav-sub">
+										<a href="javascript:;">基础护肤</a>
+										<i>&gt;</i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">面膜</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">水/精华/霜</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">洁面/卸妆</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-sub">
+										<a href="javascript:;">香水彩妆</a>
+										<i>&gt;</i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">底妆</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">香水</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">眼妆</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">唇妆</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">美甲
+												</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">美妆工具</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-sub">
+										<a href="javascript:;">洗发护发
+										</a>
+										<i>&gt;</i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">洗发护发</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">美发工具</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-sub">
+										<a href="javascript:;">身体护理</a>
+										<i>&gt;</i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">沐浴润肤</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">精油</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-sub">
+										<a href="javascript:;">个护
+										</a>
+										<i>&gt;</i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">声波振动牙刷</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">剃须/毛刀</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-main">
+								<p>
+									<a href="javascript:;">厨具</a>
+									<span>/</span>
+									<a href="javascript:;">家电</a>
+									<span>/</span>
+									<a href="javascript:;">数码</a>
+								</p>
+								<ul>
+									<li class="nav-sub">
+										<a href="javascript:;">水具
+										</a>
+										<i>&gt;</i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">水杯水壶</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">酒杯/茶杯</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-sub">
+										<a href="javascript:;">厨具
+										</a>
+										<i>&gt;</i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">烹饪锅具</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">刀具菜板</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">餐具</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">厨房配件</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">清洁/收纳</a>
+											</li>
+										</ul>
+									</li>
 
+									<li class="nav-sub">
+										<a href="javascript:;">家电</a>
+										<i>&gt;</i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">厨房小电</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">生活电器</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">个护健康</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-sub">
+										<a href="javascript:;">数码</a>
+										<i>&gt;</i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">数据线</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">充电设备</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">数码配件</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-main">
+								<p>
+									<a href="javascript:;">家装</a>
+									<span>/</span>
+									<a href="javascript:;">家具</a>
+									<span>/</span>
+									<a href="javascript:;">汽配</a>
+								</p>
+								<ul>
+									<li class="nav-sub">
+										<a href="javascript:;">厨卫用品
+										</a>
+										<i>&gt;</i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">淋浴花洒</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">龙头/水槽</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">厨卫挂件</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-sub">
+										<a href="javascript:;">家装软饰
+										</a>
+										<i>&gt;</i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">台灯</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">落地灯</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">挂钟</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">装饰画</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">相框</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-sub">
+										<a href="javascript:;">五金工具</a>
+										<i>&gt;</i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">小工具</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">锁具</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">开关插座</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-sub">
+										<a href="javascript:;">卧室</a>
+										<i>&gt;</i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">床</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">床垫</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">储物</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">梳妆台/镜
+												</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-sub">
+										<a href="javascript:;">书房</a>
+										<i>&gt;</i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">办公椅</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">书架/书柜</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">书桌</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-sub">
+										<a href="javascript:;">客厅</a>
+										<i>&gt;</i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">茶几</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">储物/电视柜</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">沙发/椅</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-sub">
+										<a href="javascript:;">餐厅</a>
+										<i>&gt;</i>
+										<ul>
+											<li class="nav-item">
+												<a href="">餐椅</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">餐边柜</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">餐桌</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-sub">
+										<a href="javascript:;">儿童家具
+										</a>
+										<i>&gt;</i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">儿童桌椅</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">儿童床</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">床垫</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-sub">
+										<a href="javascript:;">汽配</a>
+										<i>&gt;</i>
+										<ul>
+											<li class="nav-item">
+												<a href="javascript:;">汽车配饰</a>
+											</li>
+											<li class="nav-item">
+												<a href="javascript:;">车充</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+			<!--<ol class="banner-item ">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li class="item-active"></li>
+			</ol>-->
+		</div>
+		<!--专题文章部分-->
+		<div id="article">
+			<a href="javascript:;">
+				<img src="images/bg1.png"/>
+				<span>最后一波大礼：定制拉杆箱免费送</span>
+				<i>2017-07-30</i>
+				<i>必要</i>
+			</a>
+		</div>
+		<!--模块内容-->
+		<div id="connect">
+			<div class="connect-recommend-1">
+				<ul>
+					<li>
+						<a href="javascript:;"><img src="images/connect1.jpg"/></a>
+					</li>
+					<li>
+						<a href="javascript:;"><img src="images/connect2.jpg"/></a>
+					</li>
+					<li>
+						<a href="javascript:;"><img src="images/connect3.jpg"/></a>
+					</li>
+				</ul>
+			</div>
+			<div class="connect-recommend-2">
+				<div class="connect-title">
+					<p>精选</p>
+				</div>
+				<ul>
+					<li class="press1" style="left: 0px;">
+						<a href="javascript:;">
+							<i></i>
+							<img src="images/press1.jpg"/>
+						</a>
+					</li>
+					<li class="press2" style="padding-left: 10px; left: 620px;">
+						<a href="javascript:;">
+							<i></i>
+							<img src="images/press2.jpg"/>
+						</a>
+					</li>
+					<li class="press3" style="padding-left: 10px; left: 712px;">
+						<a href="javascript:;">
+							<i></i>
+							<img src="images/press3.jpg"/>
+						</a>
+					</li>
+					<li class="press4" style="padding-left: 10px; left: 804px;">
+						<a href="javascript:;">
+							<i></i>
+							<img src="images/press4.jpg"/>
+						</a>
+					</li>
+					<li class="press5" style="padding-left: 10px; left: 896px;">
+						<a href="javascript:;">
+							<i></i>
+							<img src="images/press5.jpg"/>
+						</a>
+					</li>
+					<li class="press6" style="padding-left: 10px; left: 988px;">
+						<a href="javascript:;">
+							<i></i>
+							<img src="images/press6.jpg"/>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!--光学眼镜-->
+			<div class="connect-recommend-3">
 
-</body>
+				<div class="connect-title">
+					<p>光学眼镜</p>
+					<a href="javascript:;">查看全部&gt;</a>
+				</div>
+				<ul class="connect-list clearfix">
+					<li class="connect-brand">
+						<a href="javascript:;">
+							<i><img src="images/show1.jpg"/></i>
+							<span>依视路集团旗下&nbsp;&nbsp;企业制造</span>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/show2.jpg"/></i>
+							<dl>
+								<dt>纯钛飞行员太阳镜</dt>
+								<dd>¥249</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/show3.jpg"/></i>
+							<dl>
+								<dt>钛架全框-勒</dt>
+								<dd>¥279</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/show4.jpg"/></i>
+							<dl>
+								<dt>英伦复古-B</dt>
+								<dd>¥239</dd>
+							</dl>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!--品质男装-->	
+			<div class="connect-recommend-3">
+				<div class="connect-title">
+					<p>品质男装</p>
+					<a href="javascript:;">查看全部&gt;</a>
+				</div>
+				<ul class="connect-list clearfix">
+					<li class="connect-brand">
+						<a href="javascript:;">
+							<i><img src="images/show5.jpg"/></i>
+							<span>Hugo Boss、PRADA&nbsp;&nbsp;制造商出品企业制造</span>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/show6.jpg"/></i>
+							<dl>
+								<dt>净色免烫商务衬衫</dt>
+								<dd>¥209</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/show7.jpg"/></i>
+							<dl>
+								<dt>清爽降温凉爽玉合体修身裤</dt>
+								<dd>¥259</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/show8.jpg"/></i>
+							<dl>
+								<dt>虎头刺绣短袖T恤</dt>
+								<dd>¥169</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/show9.jpg"/></i>
+							<dl>
+								<dt>薄款休闲裤两色</dt>
+								<dd>¥219</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/show10.jpg"/></i>
+							<dl>
+								<dt>清凉混纺百搭西裤</dt>
+								<dd>¥349</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/show11.jpg"/></i>
+							<dl>
+								<dt>商务休闲冰棉polo男短T</dt>
+								<dd>¥239</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/show12.jpg"/></i>
+							<dl>
+								<dt>140S/3丝光纯棉珠地POLO</dt>
+								<dd>¥279</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/show13.jpg"/></i>
+							<dl>
+								<dt>DP免烫商务三色衬衫</dt>
+								<dd>¥259</dd>
+							</dl>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!--潮流女装-->
+			<div class="connect-recommend-3">
+				<div class="connect-title">
+					<p>潮流女装</p>
+					<a href="javascript:;">查看全部&gt;</a>
+				</div>
+				<ul class="connect-list clearfix">
+					<li class="connect-brand">
+						<a href="javascript:;">
+							<i><img src="images/women1.jpg"/></i>
+							<span>MaxMara、Diesel&nbsp;&nbsp;制造商出品</span>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/women2.jpg"/></i>
+							<dl>
+								<dt>升级版大牌撞色短袖连衣裙</dt>
+								<dd>¥389</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/women3.jpg"/></i>
+							<dl>
+								<dt>亚麻抽绳衬衫式连衣裙</dt>
+								<dd>¥339</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/women4.jpg"/></i>
+							<dl>
+								<dt>冰系四面弹显瘦九分铅笔裤</dt>
+								<dd>¥249</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/women5.jpg"/></i>
+							<dl>
+								<dt>冰棉短袖T+阔腿裤休闲套装</dt>
+								<dd>¥399</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/women6.jpg"/></i>
+							<dl>
+								<dt>直筒/喇叭裤显瘦高休闲裤</dt>
+								<dd>¥269</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/women7.jpg"/></i>
+							<dl>
+								<dt>经典三防女风衣</dt>
+								<dd>¥599</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/women8.jpg"/></i>
+							<dl>
+								<dt>纯棉珠地短袖女POLO</dt>
+								<dd>¥159</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/women9.jpg"/></i>
+							<dl>
+								<dt>素色锥形九分裤</dt>
+								<dd>¥249</dd>
+							</dl>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!--内衣袜子-->
+			<div class="connect-recommend-3">
+				<div class="connect-title">
+					<p>内衣袜子</p>
+					<a href="javascript:;">查看全部&gt;</a>
+				</div>
+				<ul class="connect-list clearfix">
+					<li class="connect-brand">
+						<a href="javascript:;">
+							<i><img src="images/cloth1.jpg"/></i>
+							<span>CK、LA PERLA等&nbsp;&nbsp;制造商出品</span>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/cloth2.jpg"/></i>
+							<dl>
+								<dt>光面一片式无钢圈无痕文胸</dt>
+								<dd>¥149</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/cloth3.jpg"/></i>
+							<dl>
+								<dt>莫代尔平角内裤5色装</dt>
+								<dd>¥159</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/cloth4.jpg"/></i>
+							<dl>
+								<dt>含棉96.5%抑菌防臭商务袜</dt>
+								<dd>¥75</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/cloth5.jpg"/></i>
+							<dl>
+								<dt>女士无痕内裤5条</dt>
+								<dd>¥209</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/cloth6.jpg"/></i>
+							<dl>
+								<dt>天竺棉家居服短袖</dt>
+								<dd>¥159</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/cloth7.jpg"/></i>
+							<dl>
+								<dt>精梳棉薄短袜x6</dt>
+								<dd>¥68</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/cloth8.jpg"/></i>
+							<dl>
+								<dt>有机竹棉长裙家居服</dt>
+								<dd>¥99</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/cloth9.jpg"/></i>
+							<dl>
+								<dt>无钢圈聚拢舒适蕾丝文胸</dt>
+								<dd>¥139</dd>
+							</dl>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!--母婴儿童-->
+			<div class="connect-recommend-3">
+				<div class="connect-title">
+					<p>母婴儿童</p>
+					<a href="javascript:;">查看全部&gt;</a>
+				</div>
+				<ul class="connect-list clearfix">
+					<li class="connect-brand">
+						<a href="javascript:;">
+							<i><img src="images/children1.jpg"/></i>
+							<span>英国皇室御用服装&nbsp;&nbsp;制造商出品</span>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/children2.jpg"/></i>
+							<dl>
+								<dt>优级儿童食用级小麦橡皮泥</dt>
+								<dd>¥39</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/children3.jpg"/></i>
+							<dl>
+								<dt>亲子懒人套脚儿童健步鞋</dt>
+								<dd>¥139</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/children4.jpg"/></i>
+							<dl>
+								<dt>新生儿彩棉薄款礼盒十件套</dt>
+								<dd>¥169</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/children5.jpg"/></i>
+							<dl>
+								<dt>1至4年级减负书包</dt>
+								<dd>¥159</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/children6.jpg"/></i>
+							<dl>
+								<dt>骑行滑步一体童车</dt>
+								<dd>¥349</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/children7.jpg"/></i>
+							<dl>
+								<dt>条纹亲子针织POLO衫</dt>
+								<dd>¥239</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/children8.jpg"/></i>
+							<dl>
+								<dt>WIN奔驰儿童拉杆箱</dt>
+								<dd>¥279</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/children9.jpg"/></i>
+							<dl>
+								<dt>新生儿全棉和尚服套装</dt>
+								<dd>¥99</dd>
+							</dl>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!--男女鞋靴-->
+			<div class="connect-recommend-3">
+				<div class="connect-title">
+					<p>男女鞋靴</p>
+					<a href="javascript:;">查看全部&gt;</a>
+				</div>
+				<ul class="connect-list clearfix">
+					<li class="connect-brand">
+						<a href="javascript:;">
+							<i><img src="images/shoes1.jpg"/></i>
+							<span>LACOSTE等&nbsp;&nbsp;制造商出品</span>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/shoes2.jpg"/></i>
+							<dl>
+								<dt>男士休闲健步鞋</dt>
+								<dd>¥169</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/shoes3.jpg"/></i>
+							<dl>
+								<dt>环扣装饰轻便女鞋</dt>
+								<dd>¥399</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/shoes4.jpg"/></i>
+							<dl>
+								<dt>简约商务男鞋</dt>
+								<dd>¥459</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/shoes5.jpg"/></i>
+							<dl>
+								<dt>时尚潮流休闲鞋男</dt>
+								<dd>¥199</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/shoes6.jpg"/></i>
+							<dl>
+								<dt>男士休闲鞋</dt>
+								<dd>¥349</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/shoes7.jpg"/></i>
+							<dl>
+								<dt>条纹织带中跟女鞋</dt>
+								<dd>¥239</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/shoes8.jpg"/></i>
+							<dl>
+								<dt>经典休闲小白鞋</dt>
+								<dd>¥279</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/shoes9.jpg"/></i>
+							<dl>
+								<dt>男女百搭帆布板鞋</dt>
+								<dd>¥99</dd>
+							</dl>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!--户外运动-->
+			<div class="connect-recommend-3">
+				<div class="connect-title">
+					<p>户外运动</p>
+					<a href="javascript:;">查看全部&gt;</a>
+				</div>
+				<ul class="connect-list clearfix">
+					<li class="connect-brand">
+						<a href="javascript:;">
+							<i><img src="images/outer1.jpg"/></i>
+							<span>斯凯奇、Saucony等&nbsp;&nbsp;制造商出品</span>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/outer2.jpg"/></i>
+							<dl>
+								<dt>RUNPRO专业跑鞋男</dt>
+								<dd>¥209</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/outer3.jpg"/></i>
+							<dl>
+								<dt>男士一体织休闲运动鞋</dt>
+								<dd>¥259</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/outer4.jpg"/></i>
+							<dl>
+								<dt>RC女士专业运动裤装</dt>
+								<dd>¥169</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/outer5.jpg"/></i>
+							<dl>
+								<dt>男子专业运动短裤</dt>
+								<dd>¥219</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/outer6.jpg"/></i>
+							<dl>
+								<dt>MJU防晒透气时尚短袖T恤</dt>
+								<dd>¥349</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/outer7.jpg"/></i>
+							<dl>
+								<dt>减震护脚足球袜×2</dt>
+								<dd>¥239</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/outer8.jpg"/></i>
+							<dl>
+								<dt>运动拖鞋3双男款</dt>
+								<dd>¥99</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/outer9.jpg"/></i>
+							<dl>
+								<dt>进攻型羽毛球拍</dt>
+								<dd>¥259</dd>
+							</dl>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!--皮具配件-->
+			<div class="connect-recommend-3">
+				<div class="connect-title">
+					<p>皮具配件</p>
+					<a href="javascript:;">查看全部&gt;</a>
+				</div>
+				<ul class="connect-list clearfix">
+					<li class="connect-brand">
+						<a href="javascript:;">
+							<i><img src="images/pag1.jpg"/></i>
+							<span>COACH、MK&nbsp;&nbsp;制造商出品</span>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/pag2.jpg"/></i>
+							<dl>
+								<dt>男士休闲简约自动扣皮带</dt>
+								<dd>¥209</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/pag3.jpg"/></i>
+							<dl>
+								<dt>防盗单肩胸包</dt>
+								<dd>¥259</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/pag4.jpg"/></i>
+							<dl>
+								<dt>树纹头层牛皮子母包</dt>
+								<dd>¥169</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/pag5.jpg"/></i>
+							<dl>
+								<dt>头层细纹牛皮单肩包</dt>
+								<dd>¥219</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/pag6.jpg"/></i>
+							<dl>
+								<dt>头层牛皮超薄小钱包</dt>
+								<dd>¥349</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/pag7.jpg"/></i>
+							<dl>
+								<dt>头层牛皮简约手提包×2</dt>
+								<dd>¥559</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/pag8.jpg"/></i>
+							<dl>
+								<dt>手提单肩旅行包</dt>
+								<dd>¥399</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/pag9.jpg"/></i>
+							<dl>
+								<dt>男士牛皮手提公文包</dt>
+								<dd>¥359</dd>
+							</dl>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!--出行必备-->
+			<div class="connect-recommend-3">
+				<div class="connect-title">
+					<p>出行必备</p>
+					<a href="javascript:;">查看全部&gt;</a>
+				</div>
+				<ul class="connect-list clearfix">
+					<li class="connect-brand">
+						<a href="javascript:;">
+							<i><img src="images/move1.jpg"/></i>
+							<span>新秀丽、NIKE等&nbsp;&nbsp;制造商出品</span>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/move2.jpg"/></i>
+							<dl>
+								<dt>GF合金包角铝框箱</dt>
+								<dd>¥359</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/move3.jpg"/></i>
+							<dl>
+								<dt>多功能洗漱包</dt>
+								<dd>¥69</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/move4.jpg"/></i>
+							<dl>
+								<dt>三折防晒伞 民族风</dt>
+								<dd>¥109</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/move5.jpg"/></i>
+							<dl>
+								<dt>铠装铝合金拉杆箱</dt>
+								<dd>¥1419</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/move6.jpg"/></i>
+							<dl>
+								<dt>CB细窄边铝框拉杆箱</dt>
+								<dd>¥319</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/move7.jpg"/></i>
+							<dl>
+								<dt>WIN超轻商务拉杆箱</dt>
+								<dd>¥339</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/move8.jpg"/></i>
+							<dl>
+								<dt>防霾口罩10/30只</dt>
+								<dd>¥99</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/move9.jpg"/></i>
+							<dl>
+								<dt>休闲运动双肩包</dt>
+								<dd>¥259</dd>
+							</dl>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!--美妆洗护-->
+			<div class="connect-recommend-3">
+				<div class="connect-title">
+					<p>美妆洗护</p>
+					<a href="javascript:;">查看全部&gt;</a>
+				</div>
+				<ul class="connect-list clearfix">
+					<li class="connect-brand">
+						<a href="javascript:;">
+							<i><img src="images/beauty1.jpg"/></i>
+							<span>SWISSGETAL实验室、欧舒丹&nbsp;&nbsp;制造商出品</span>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/beauty2.jpg"/></i>
+							<dl>
+								<dt>小甘菊晒后密集修护面膜</dt>
+								<dd>¥79</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/beauty3.jpg"/></i>
+							<dl>
+								<dt>香榭口红2支装</dt>
+								<dd>¥99</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/beauty4.jpg"/></i>
+							<dl>
+								<dt>赋妍抗皱精华液</dt>
+								<dd>¥139</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/beauty5.jpg"/></i>
+							<dl>
+								<dt>热感抗皱新活眼霜</dt>
+								<dd>¥119</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/beauty6.jpg"/></i>
+							<dl>
+								<dt>男士清透洁面膏</dt>
+								<dd>¥49</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/beauty7.jpg"/></i>
+							<dl>
+								<dt>直发器DK-EP1042</dt>
+								<dd>¥99</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/beauty8.jpg"/></i>
+							<dl>
+								<dt>无柄黑檀木梳</dt>
+								<dd>¥99</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/beauty9.jpg"/></i>
+							<dl>
+								<dt>透亮无瑕气垫CC霜</dt>
+								<dd>¥99</dd>
+							</dl>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!--个人护理-->
+			<div class="connect-recommend-3">
+				<div class="connect-title">
+					<p>个人护理</p>
+					<a href="javascript:;">查看全部&gt;</a>
+				</div>
+				<ul class="connect-list clearfix">
+					<li class="connect-brand">
+						<a href="javascript:;">
+							<i><img src="images/nurse1.jpg"/></i>
+							<span>源自美国&nbsp;&nbsp;Edgewell制造商出品</span>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/nurse2.jpg"/></i>
+							<dl>
+								<dt>澎湃声波牙刷 标准型</dt>
+								<dd>¥279</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/nurse3.jpg"/></i>
+							<dl>
+								<dt>6+1层剃须刀</dt>
+								<dd>¥199</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/nurse4.jpg"/></i>
+							<dl>
+								<dt>5层女用刮毛刀</dt>
+								<dd>¥79</dd>
+							</dl>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!--居家生活-->
+			<div class="connect-recommend-3">
+				<div class="connect-title">
+					<p>居家生活</p>
+					<a href="javascript:;">查看全部&gt;</a>
+				</div>
+				<ul class="connect-list clearfix">
+					<li class="connect-brand">
+						<a href="javascript:;">
+							<i><img src="images/home1.jpg"/></i>
+							<span>MUJI、King Koil等&nbsp;&nbsp;制造商出品</span>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/home2.jpg"/></i>
+							<dl>
+								<dt>MN 礼盒装90%天然乳胶枕</dt>
+								<dd>¥179</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/home3.jpg"/></i>
+							<dl>
+								<dt>圆形护颈荞麦枕</dt>
+								<dd>¥49</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/home4.jpg"/></i>
+							<dl>
+								<dt>鞋柜双层鞋架套装</dt>
+								<dd>¥59</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/home5.jpg"/></i>
+							<dl>
+								<dt>必柔Square保护垫</dt>
+								<dd>¥179</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/home6.jpg"/></i>
+							<dl>
+								<dt>天竺棉多功能颈枕</dt>
+								<dd>¥65</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/home7.jpg"/></i>
+							<dl>
+								<dt>喷雾干湿两用拖把</dt>
+								<dd>¥149</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/home8.jpg"/></i>
+							<dl>
+								<dt>可裁剪日式毛巾</dt>
+								<dd>¥49</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/home9.jpg"/></i>
+							<dl>
+								<dt>天然1.35mm细竹丝双面凉席</dt>
+								<dd>¥299</dd>
+							</dl>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!--厨具水具-->
+			<div class="connect-recommend-3">
+				<div class="connect-title">
+					<p>厨具水具</p>
+					<a href="javascript:;">查看全部&gt;</a>
+				</div>
+				<ul class="connect-list clearfix">
+					<li class="connect-brand">
+						<a href="javascript:;">
+							<i><img src="images/tool1.jpg"/></i>
+							<span>WMF、ALL-Clad等&nbsp;&nbsp;制造商出品</span>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/tool2.jpg"/></i>
+							<dl>
+								<dt>2.0L双层不锈钢真空保温壶</dt>
+								<dd>¥149</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/tool3.jpg"/></i>
+							<dl>
+								<dt>全能厨房清洁套装14件套</dt>
+								<dd>¥69</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/tool4.jpg"/></i>
+							<dl>
+								<dt>30件套骨瓷餐具--喜上枝头</dt>
+								<dd>¥339</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/tool5.jpg"/></i>
+							<dl>
+								<dt>双层耐热鹅蛋形玻璃杯</dt>
+								<dd>¥79</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/tool6.jpg"/></i>
+							<dl>
+								<dt>红檀木筷10双装</dt>
+								<dd>¥59</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/tool7.jpg"/></i>
+							<dl>
+								<dt>进口橡胶木砧板</dt>
+								<dd>¥99</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/tool8.jpg"/></i>
+							<dl>
+								<dt>多用途收纳兜整理盒</dt>
+								<dd>¥49</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/tool9.jpg"/></i>
+							<dl>
+								<dt>透亮无瑕气垫CC霜</dt>
+								<dd>¥99</dd>
+							</dl>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!--生活家电-->
+			<div class="connect-recommend-3">
+				<div class="connect-title">
+					<p>生活家电</p>
+					<a href="javascript:;">查看全部&gt;</a>
+				</div>
+				<ul class="connect-list clearfix">
+					<li class="connect-brand">
+						<a href="javascript:;">
+							<i><img src="images/household1.jpg"/></i>
+							<span>松下、飞利浦&nbsp;&nbsp;制造商出品</span>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/household2.jpg"/></i>
+							<dl>
+								<dt>双杯随行果汁机</dt>
+								<dd>¥179</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/household3.jpg"/></i>
+							<dl>
+								<dt>触控家用单灶电磁炉</dt>
+								<dd>¥199</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/household4.jpg"/></i>
+							<dl>
+								<dt>低噪音USB摇头风扇</dt>
+								<dd>¥139</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/household5.jpg"/></i>
+							<dl>
+								<dt>进口otter智能温控电水壶</dt>
+								<dd>¥399</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/household6.jpg"/></i>
+							<dl>
+								<dt>家用商用空气净化器</dt>
+								<dd>¥1149</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/household7.jpg"/></i>
+							<dl>
+								<dt>澎湃声波牙刷 Pro</dt>
+								<dd>¥299</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/household8.jpg"/></i>
+							<dl>
+								<dt>直发器DK-EP1042</dt>
+								<dd>¥99</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/household9.jpg"/></i>
+							<dl>
+								<dt>透亮无瑕气垫CC霜</dt>
+								<dd>¥99</dd>
+							</dl>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!--汽车配饰-->
+			<div class="connect-recommend-3">
+				<div class="connect-title">
+					<p>汽车配饰</p>
+					<a href="javascript:;">查看全部&gt;</a>
+				</div>
+				<ul class="connect-list clearfix">
+					<li class="connect-brand">
+						<a href="javascript:;">
+							<i><img src="images/car1.jpg"/></i>
+							<span>汽车配饰&nbsp;&nbsp;BBA制造商出品</span>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/car2.jpg"/></i>
+							<dl>
+								<dt>凉爽冰丝通用型汽车座垫</dt>
+								<dd>¥429</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/car3.jpg"/></i>
+							<dl>
+								<dt>经典菱格纹双层脚垫</dt>
+								<dd>¥459</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/car4.jpg"/></i>
+							<dl>
+								<dt>快充车载充电器</dt>
+								<dd>¥79</dd>
+							</dl>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!--家装五金-->
+			<div class="connect-recommend-3">
+				<div class="connect-title">
+					<p>家装五金</p>
+					<a href="javascript:;">查看全部&gt;</a>
+				</div>
+				<ul class="connect-list clearfix">
+					<li class="connect-brand">
+						<a href="javascript:;">
+							<i><img src="images/live1.jpg"/></i>
+							<span>家装五金&nbsp;&nbsp;KOHLER卫浴制造商出品</span>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/live2.jpg"/></i>
+							<dl>
+								<dt>五功能手持花洒软管套装</dt>
+								<dd>¥99</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/live3.jpg"/></i>
+							<dl>
+								<dt>棒球手电筒</dt>
+								<dd>¥129</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/live4.jpg"/></i>
+							<dl>
+								<dt>北欧风简约挂钟</dt>
+								<dd>¥109</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/live5.jpg"/></i>
+							<dl>
+								<dt>第壹 LED 台灯</dt>
+								<dd>¥339</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/live6.jpg"/></i>
+							<dl>
+								<dt>纯铜强磁门吸（地装）</dt>
+								<dd>¥49</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/live7.jpg"/></i>
+							<dl>
+								<dt>防儿童触电墙壁插座</dt>
+								<dd>¥99</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/live8.jpg"/></i>
+							<dl>
+								<dt>《小雏菊》单幅挂画</dt>
+								<dd>¥229</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/live9.jpg"/></i>
+							<dl>
+								<dt>挂墙双面化妆拉镜</dt>
+								<dd>¥279</dd>
+							</dl>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!--家具建材-->
+			<div class="connect-recommend-3">
+				<div class="connect-title">
+					<p>家具建材</p>
+					<a href="javascript:;">查看全部&gt;</a>
+				</div>
+				<ul class="connect-list clearfix">
+					<li class="connect-brand">
+						<a href="javascript:;">
+							<i><img src="images/gear1.jpg"/></i>
+							<span>MUJI制造商出品&nbsp;&nbsp;家具建材</span>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/gear2.jpg"/></i>
+							<dl>
+								<dt>白橡实木床</dt>
+								<dd>¥1999</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/gear3.jpg"/></i>
+							<dl>
+								<dt>舒适健康电脑椅</dt>
+								<dd>¥599</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/gear4.jpg"/></i>
+							<dl>
+								<dt>家用儿童四方课桌</dt>
+								<dd>¥329</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/gear5.jpg"/></i>
+							<dl>
+								<dt>帆船酒店床垫老年型</dt>
+								<dd>¥2329</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/gear6.jpg"/></i>
+							<dl>
+								<dt>胡桃木色餐椅</dt>
+								<dd>¥499</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/gear7.jpg"/></i>
+							<dl>
+								<dt>白橡实木床头柜</dt>
+								<dd>¥679</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/gear8.jpg"/></i>
+							<dl>
+								<dt>实木衣架</dt>
+								<dd>¥399</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/gear9.jpg"/></i>
+							<dl>
+								<dt>时尚百搭电脑椅</dt>
+								<dd>¥399</dd>
+							</dl>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!--数码配件-->
+			<div class="connect-recommend-3">
+				<div class="connect-title">
+					<p>数码配件</p>
+					<a href="javascript:;">查看全部&gt;</a>
+				</div>
+				<ul class="connect-list clearfix">
+					<li class="connect-brand">
+						<a href="javascript:;">
+							<i><img src="images/figure1.jpg"/></i>
+							<span>数码配件&nbsp;&nbsp;飞利浦制造商出品</span>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/figure2.jpg"/></i>
+							<dl>
+								<dt>13"MacBook Air包</dt>
+								<dd>¥49</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/figure3.jpg"/></i>
+							<dl>
+								<dt>个性菱形手机壳</dt>
+								<dd>¥139</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/figure4.jpg"/></i>
+							<dl>
+								<dt>白色苹果数据线</dt>
+								<dd>¥45</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/figure5.jpg"/></i>
+							<dl>
+								<dt>快充车载充电器</dt>
+								<dd>¥79</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/figure6.jpg"/></i>
+							<dl>
+								<dt>菱格真皮便携笔记本</dt>
+								<dd>¥219</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/figure7.jpg"/></i>
+							<dl>
+								<dt>USB排插</dt>
+								<dd>¥49</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/figure8.jpg"/></i>
+							<dl>
+								<dt>4口USB充电器</dt>
+								<dd>¥59</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i><img src="images/figure9.jpg"/></i>
+							<dl>
+								<dt>木纹USB排插（3AC+3USB）</dt>
+								<dd>¥69</dd>
+							</dl>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--底部-->
+		<div class="footerCon">
+			<script type="text/javascript">
+				$(".footerCon").load("footer.html")
+			</script>
+		</div>
+		<!--右边定位栏-->
+		<ul id="rightBar">
+			<li class="rightBar-serve">
+				<a href="javascript:;"></a>
+			</li>
+			<li class="rightBar-phone"></li>
+			<li class="rightBar-share"></li>
+			<li class="rightBar-code">
+				<div>
+					<span></span>
+					<dl>
+						<dt></dt>
+						<dd>扫码下载必要APP</dd>
+					</dl>
+				</div>
+			</li>
+			<li class="rightBar-top"></li>
+		</ul>
+	</body>
 </html>

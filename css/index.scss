@@ -1,0 +1,240 @@
+//轮播图
+#banner{
+    position: relative;
+    width: 1080px;
+    margin: 10px auto;
+    background: #FFFFFF;
+}
+.banner-slider{
+    position: relative;
+}
+.banner-slider>ul{
+    height: 360px;
+}
+.banner-slider li{
+      position: absolute;
+      top: 0;
+      left: 0;
+}
+.banner-item{
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    width: 880px;
+    text-align: center;
+}
+.banner-item>li{
+    position: relative;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #523669;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 6px;
+}
+.banner-item li.item-active {
+    background: #f7b200;
+    border: 2px solid #f7b200;
+}
+//.swiper-button-prev{
+//  display: none;
+//}
+//.swiper-button-next{
+//  display: none;
+//}
+//.swiper-slide:hover .swiper-button-prev,.swiper-slide:hover .swiper-button-next {
+//  display: block;
+//}
+//.slider-left{
+//  background: url(../images/slider-left.png) no-repeat;
+//  left: 220px;
+//}
+//.slider-right{
+//  background: url(../images/slider-right.png) no-repeat;
+//  right: 20px;
+//}
+
+//专题文章
+#article{
+    width: 1080px;
+    margin: 0 auto;
+}
+#article a{
+    display: block;
+    line-height: 56px;
+    color: #333333;
+    font-size: 16px;
+    background: #FFFFFF;
+}
+#article img{
+    width: 100px;
+    margin: 0 48px;
+    vertical-align: middle;
+}
+#article span{
+    display: inline-block;
+    height: 21px;
+    line-height: 21px;
+    padding-left: 20px;
+    border-left: 1px solid #CCCCCC;
+    font-size: 16px;
+    vertical-align: middle;
+}
+#article i{
+    float: right;
+    margin-right: 20px;
+}
+//模块内容1
+#connect{
+    width: 1080px;
+    margin: 0 auto;
+}
+#connect>div{
+    margin-top: 40px;
+}
+.connect-recommend-1 ul{
+    width: 1095px;
+    height: 220px;
+}
+.connect-recommend-1 li{
+    float: left;
+    margin-right: 15px;
+}
+.connect-recommend-1 a{
+    display: block;
+    width: 350px;
+    height: 220px;
+    transition: box-shadow 0.5s ease-in-out 0s;
+}
+.connect-recommend-1 a:hover {
+    box-shadow: 0 1px 10px 4px rgba(0,0,0,.09);
+}
+.connect-recommend-1 img{
+    width: 350px;
+    height: 220px;
+}
+.connect-title{
+    position: relative;
+    margin-bottom: 20px;
+}
+.connect-title p{
+    font-size: 24px;
+    color: #333;
+    line-height: 24px;
+}
+.connect-recommend-2 ul{
+    position: relative;
+    width: 100%;
+    height: 280px;
+    background: #FFFFFF;
+    overflow: hidden;
+}
+.connect-recommend-2 li{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 620px;
+    height: 280px;
+    background: #FFFFFF;
+}
+.connect-recommend-2 a {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.connect-recommend-2 i {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: background 0.5s ease-in-out 0s;
+}
+
+.connect-recommend-2 li.press2 i,.press3 i,.press4 i,.press5 i,.press6 i {
+    background: rgba(0,0,0,.3);
+}
+
+.connect-recommend-2 img {
+    width: 100%;
+    height: 100%;
+}
+.connect-recommend-3{
+    max-height: 627px;
+}
+.connect-title a{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: #333333;
+    font-size: 16px;
+}
+.connect-list{
+    width: 1095px;
+}
+.connect-list li{
+    float: left;
+    margin: 0 15px 15px 0;
+}
+.connect-list a{
+    display: block;
+    width: 204px;
+    height: 284px;
+    text-align: center;
+    background: #FFFFFF;
+    transition: box-shadow 0.5s ease-in-out 0s;
+}
+.connect-list a:hover {
+    box-shadow: 0 1px 10px 4px rgba(0,0,0,.09);
+}
+.connect-list i{
+    display: inline-block;
+    width: 204px;
+    height: 204px;
+    overflow: hidden;
+    transform-style: preserve-3d;
+}
+.connect-list img{
+    width: 204px;
+    height: 204px;
+    transition: transform 0.5s ease-in-out 0s;
+}
+.connect-list a:hover img{
+    transform: scale3d(1.03,1.03,1);
+}
+.connect-list dl{
+    height: 60px;
+    margin-top: 20px;
+}
+.connect-list dt{
+    color: #333333;
+    font-size: 16px;
+    text-align: center;
+}
+.connect-list dd{
+    margin-top: 5px;
+    color: #ff3333;
+    font-size: 16px;
+    text-align: center;
+}
+.connect-brand a{
+    width: 423px;
+}
+.connect-brand i{
+    width: 423px;
+}
+.connect-brand img{
+    position: relative;
+    left: -20px;
+    width: 464px;
+}
+.connect-brand span{
+    display: block;
+    margin-top: 24px;
+    font-size: 20px;
+    color: #333333;
+}

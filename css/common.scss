@@ -1,0 +1,83 @@
+@charset "utf-8";
+html,body,ul,li,ol,dl,dd,dt,p,h1,h2,h3,h4,h5,h6,form,fieldset,legend,img,input {
+    margin: 0;
+    padding: 0;
+    word-break: break-all;
+}
+
+body {
+    font: 12px "Microsoft YaHei", "微软雅黑", "宋体", Arial, Helvetica, sans-serif;
+    text-align: left;
+    background-color: #fff;
+    color: #333;
+    margin: 0px;
+}
+
+table {
+    font: 12px "Microsoft YaHei", "微软雅黑", "宋体", Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    color: #333;
+}
+
+ul,ol,li,dl,dt,dd {
+    border: 0px;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+em,cite {
+    font-style: normal;
+    font-weight: 400;
+}
+
+i {
+    font-style: normal;
+}
+
+b,
+strong {
+    font-weight: 100;
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-size: 12px;
+    font-weight: 100;
+    border: 0px;
+}
+
+input,textarea{
+    outline: none;
+}
+
+.clearfix:after {
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+* html .clearfix {
+    height: 1%;
+}
+
+html .clearfix {
+    display: block;
+}

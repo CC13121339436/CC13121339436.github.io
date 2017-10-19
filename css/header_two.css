@@ -1,0 +1,241 @@
+.new_header {
+  width: 100%;
+  background: #333333;
+}
+
+.wrap {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+}
+
+.new_nav {
+  border-bottom: 1px solid #eae4e8;
+}
+
+.new_logo {
+  height: 98px;
+}
+
+.new_nav-logo {
+  display: inline-block;
+  width: 231px;
+  height: 98px;
+  background: url(../images/logo.png) 0 center no-repeat;
+}
+
+.shopStepBox {
+  float: right;
+  width: 560px;
+}
+
+.car-step {
+  background: url(../images/car_steps.png) left center no-repeat;
+  background-position: -30px -23px;
+  width: 560px;
+  height: 20px;
+  margin-top: 25px;
+}
+
+.car-text {
+  margin-top: 3px;
+}
+
+.car-text li {
+  float: left;
+  width: 140px;
+  height: 19px;
+  line-height: 19px;
+  color: #d5cdda;
+  text-align: center;
+}
+
+.shop-main {
+  width: 100%;
+  padding-bottom: 40px;
+}
+
+.shop-title {
+  line-height: 24px;
+  border-bottom: 1px solid #d5cdda;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  text-align: left;
+}
+
+.shop-title span {
+  color: #523669;
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+.sop_table1 {
+  width: 100%;
+  line-height: 20px;
+}
+
+.sop_table1 th {
+  font-size: 12px;
+  font-weight: normal;
+  height: 37px;
+  color: #523669;
+}
+
+.sop_table1 th:first-child {
+  padding-left: 10px;
+}
+
+.sop_table1 th:first-child span {
+  color: #523669;
+}
+
+.checkbox .openIcon {
+  background: url(../images/commonSprite2.png) no-repeat -20px -80px;
+}
+
+.openIcon {
+  width: 15px;
+  height: 15px;
+  background: url(../images/commonSprite2.png) no-repeat 0 -80px;
+}
+
+.inline {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.order-title {
+  line-height: 35px;
+  background-color: #EEEEEE;
+  padding-left: 10px;
+}
+
+.order-title a {
+  color: #333333;
+}
+
+.sop_table2 {
+  background: #FFFFFF;
+}
+
+.sop_table2 td:first-child {
+  padding-left: 10px;
+}
+
+.sop_table1 td {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px dotted #ccc;
+}
+
+.shop-all {
+  background: #FFFFFF;
+  padding-top: 10px;
+}
+
+.shop-all-one {
+  line-height: 30px;
+  padding: 0 10px;
+}
+
+.one-lef {
+  float: left;
+}
+
+#a_BatchDel {
+  color: #07a6df;
+  margin: 0 10px;
+}
+
+.one-right {
+  float: right;
+  color: #666666;
+  font-size: 14px;
+}
+
+.span-right {
+  float: right;
+  margin-right: 30px;
+  font-size: 14px;
+  color: #666666;
+}
+
+#totalPrice {
+  font-size: 14px;
+  color: #f49f26;
+  padding-right: 5px;
+  width: 80px;
+}
+
+.one-right span {
+  float: right;
+  color: #666666;
+}
+
+#totalNum {
+  color: #f49f26;
+  font-size: 14px;
+}
+
+.shop-all-two {
+  line-height: 30px;
+  padding: 0 10px;
+}
+
+.two-right {
+  float: right;
+  color: #666666;
+  font-size: 14px;
+}
+
+#packagePrice {
+  color: #f49f26;
+  width: 80px;
+  padding-right: 5px;
+}
+
+.tallyBox {
+  height: 50px;
+  line-height: 50px;
+  border-top: 1px solid #d5cdda;
+  background-color: #eeecef;
+  padding-left: 10px;
+}
+
+.goonShopping {
+  width: 100px;
+  height: 33px;
+  background: #724A88;
+  line-height: 33px;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+}
+
+.js_btn {
+  width: 85px;
+  height: 33px;
+  line-height: 33px;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  background: #f49f26;
+}
+
+.tallyBTnPos {
+  float: right;
+  margin: 10px 10px 0 30px;
+}
+
+.tallyBox p {
+  color: #666;
+  height: 48px;
+  float: right;
+}
+
+.tallyBox p span {
+  font-size: 20px;
+  color: #F49F26;
+  vertical-align: top;
+}
